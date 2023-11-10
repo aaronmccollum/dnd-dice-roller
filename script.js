@@ -7,5 +7,5 @@ let rollDice = (side) => {
 
 let resetDice = () => {
     let target = document.querySelector(".result-area");
-    target.textContent = "";
+    target.textContent = " ";
 }
