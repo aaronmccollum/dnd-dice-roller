@@ -14,6 +14,7 @@ Currently, DnD uses seven dice types in a game, and this application will simula
 - HTML
 - CSS
 - JavaScript
+- Shoelace web components
 
 ## Backlog for future updates:
 - Adding a CSS framework
