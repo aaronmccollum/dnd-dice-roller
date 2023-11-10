@@ -6,11 +6,28 @@
         <meta charset="UTF-8">
         <meta name="description" content="A dice rolling simulation application built for simplicity and fun!">
         <meta name="author" content="Aaron McCollum">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/themes/light.css" />
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/shoelace-autoloader.js"></script>
     </head>
 
     <body>
-        <header></header>
-        <main></main>
+        <header>
+            <h1>Dungeons and Dragons Dice Roller</h1>
+        </header>
+        <main>
+            <div>
+                <sl-button onclick="rollDice(20)" variant="primary">D20</sl-button>
+                <sl-button onclick="rollDice(12)" variant="primary">D12</sl-button>
+                <sl-button onclick="rollDice(10)" variant="primary">D10</sl-button>
+                <sl-button onclick="rollDice(8)" variant="primary">D8</sl-button>
+                <sl-button onclick="rollDice(6)" variant="primary">D6</sl-button>
+                <sl-button onclick="rollDice(4)" variant="primary">D4</sl-button>
+            </div>
+            <div class="result-div">
+                <p class="result-area"></p>
+            </div>
+            <sl-button onclick="resetDice()" variant="neutral">Reset</sl-button>
+        </main>
         <footer></footer>
         <script src="script.js"></script>
     </body>
