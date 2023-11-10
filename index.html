@@ -15,15 +15,16 @@
             <h1>Dungeons and Dragons Dice Roller</h1>
         </header>
         <main>
-            <div>
-                <sl-button onclick="rollDice(20)" variant="primary">D20</sl-button>
-                <sl-button onclick="rollDice(12)" variant="primary">D12</sl-button>
-                <sl-button onclick="rollDice(10)" variant="primary">D10</sl-button>
-                <sl-button onclick="rollDice(8)" variant="primary">D8</sl-button>
-                <sl-button onclick="rollDice(6)" variant="primary">D6</sl-button>
-                <sl-button onclick="rollDice(4)" variant="primary">D4</sl-button>
+            <div class="button-div">
+                <sl-button onclick="rollDice(20)" variant="primary" class="button">D20</sl-button>
+                <sl-button onclick="rollDice(12)" variant="primary" class="dice-button">D12</sl-button>
+                <sl-button onclick="rollDice(10)" variant="primary" class="dice-button">D10</sl-button>
+                <sl-button onclick="rollDice(8)" variant="primary" class="dice-button">D8</sl-button>
+                <sl-button onclick="rollDice(6)" variant="primary" class="dice-button">D6</sl-button>
+                <sl-button onclick="rollDice(4)" variant="primary" class="dice-button">D4</sl-button>
             </div>
             <div class="result-div">
+                <h2>Result</h2>
                 <p class="result-area"></p>
             </div>
             <sl-button onclick="resetDice()" variant="neutral">Reset</sl-button>

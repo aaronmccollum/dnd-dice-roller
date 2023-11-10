@@ -2,7 +2,7 @@
 let rollDice = (side) => {
     let randomNum = Math.floor(Math.random() * side) + 1;
     let target = document.querySelector(".result-area");
-    target.textContent = randomNum;
+    target.textContent = randomNum
 };
 
 let resetDice = () => {
